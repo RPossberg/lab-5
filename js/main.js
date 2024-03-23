@@ -31,10 +31,9 @@ Steps 1-3 READ THE PDF!
   allGameList.addEventListener("click", (event) => {
     let game = event.target.innerText;
     addToFavouriteGames(game);
-    console.log(myGames);
   });
 
-  // Create a function called addToFavouriteGames that takes in a game as an argument. This function should add the game to the myGames array and then call the addToFavouriteGames function. Within the event handler, call the function addToFavouriteGames and pass in the game that was clicked on.
+  // Function that takes in a game as an argument. This function should add the game to the myGames array and then call the addToFavouriteGames function. Within the event handler, call the function addToFavouriteGames and pass in the game that was clicked on.
   function addToFavouriteGames(game) {
     myGames.push(game);
     renderFavouriteList();
